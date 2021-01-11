@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+            <TextView
+                android:text="Ví dụ TableLayout"
+                android:background="@android:color/holo_green_light"
+                android:textColor="@android:color/holo_red_light"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_span="5"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow>
+            <Button android:text="B1" android:layout_column="1"/>
+            <Button android:text="B2" />
+        </TableRow>
+        <TableRow>
+            <Button android:text="C1" />
+            <Button android:text="C2" android:layout_column="3" />
+            <Button android:text="C3" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
